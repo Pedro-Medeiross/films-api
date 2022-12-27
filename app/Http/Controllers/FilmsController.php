@@ -20,8 +20,12 @@ class FilmsController extends Controller
         return json_encode($film, 201);
     }
 
-    public function show(Films $film)
+    public function show(int $film)
     {
+        $film = Films::find($film);
+        if (is_null($film)) {
+            return json_encode(['error' => 'Not found'], 404);
+        }
         return json_encode($film, 200);
     }
 
