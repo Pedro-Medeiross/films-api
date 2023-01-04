@@ -1,3 +1,24 @@
+<h1 align="center">Simple API</h1>
+
+## About this app
+<p>This project is a Simple API to create, list, and search your films. The api doesn't search in any platform, 
+just save and read the database.
+You can try downloading and running the project and make the requests for localhost:8000/api/films, after login.</p>
+
+## Requisites
+### PHP 8.1 and Composer
+
+## How to Install
+
+<p>First clone the app, then run <code>composer install</code> to install dependencies, after that run <code>npm install</code> and <code>npm run dev</code> to build necessary files to app run.
+<br> and run <code>php artisan migrate</code> to create the DB.
+<br> lastly run <code>php artisan serve</code> to up a web server to make the requests</p>
+
+## How to use
+
+<p> Create a User and get token via register and login url, after that use Bearer token to make the requests to other urls and be happy :)</p>
+
+---
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
