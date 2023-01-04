@@ -15,9 +15,8 @@ use App\Http\Controllers\FilmsController;
 |
 */
 
-//Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//    return $request->user();
-//});
-
-
-Route::apiResource('films', FilmsController::class);
+Route::middleware('auth:sanctum')->group(function () {
+    Route::apiResource('films', FilmsController::class);
+});
+Route::post('/login', [FilmsController::class, 'login']);
+Route::post('/register', [FilmsController::class, 'register']);
