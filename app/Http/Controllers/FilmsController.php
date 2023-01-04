@@ -8,9 +8,13 @@ use Illuminate\Http\Request;
 
 class FilmsController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $films = Films::all();
+        if (!$request->name){
+            $films = Films::paginate(5);
+            return json_encode($films, 200);
+        }
+        $films = Films::whereName($request->name)->paginate(5);
         return json_encode($films, 200);
     }
 
