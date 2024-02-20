@@ -1,5 +1,25 @@
 <h1 align="center">Simple API</h1>
 
+## Sobre este aplicativo
+<p>Este projeto é uma API simples para criar, listar e pesquisar seus filmes. A API não faz buscas em nenhuma plataforma,
+apenas salva e lê no banco de dados.
+Você pode tentar baixar e executar o projeto e fazer as requisições para localhost:8000/api/films, após fazer o login.</p>
+
+## Requisitos
+### PHP 8.1 e Composer
+
+## Como Instalar
+
+<p>Primeiro, clone o aplicativo, em seguida, execute <code>composer install</code> para instalar as dependências, depois execute <code>npm install</code> e <code>npm run dev</code> para construir os arquivos necessários para o funcionamento do aplicativo.
+<br> e execute <code>php artisan migrate</code> para criar o banco de dados.
+<br> por último, execute <code>php artisan serve</code> para iniciar um servidor web e fazer as requisições.</p>
+
+## Como Usar
+
+<p>Crie um usuário e obtenha o token por meio das URLs de registro e login, após isso, use o token Bearer para fazer as requisições para outras URLs e seja feliz :)</p>
+
+---
+
 ## About this app
 <p>This project is a Simple API to create, list, and search your films. The api doesn't search in any platform, 
 just save and read the database.
@@ -19,6 +39,8 @@ You can try downloading and running the project and make the requests for localh
 <p> Create a User and get token via register and login url, after that use Bearer token to make the requests to other urls and be happy :)</p>
 
 ---
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
